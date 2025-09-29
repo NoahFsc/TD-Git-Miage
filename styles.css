@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 /* // Reset & Base */
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
@@ -106,4 +108,21 @@ footer {
   section { padding: 16px; }
   header h1 { font-size: 22px; }
   section h2 { font-size: 20px; }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo-upjv {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  height: 80px;
+  z-index: 100;
+}
+
+.header-container {
+  position: relative;
+  padding-top: 40px;
 }
