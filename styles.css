@@ -15,6 +15,14 @@ body {
   line-height: 1.6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bc-accent: #0ea5a6; /* accent par défaut pour le breadcrumb */
+}
+
 main {
   max-width: 980px;
   margin: 0 auto;
@@ -93,6 +101,7 @@ hr {
 #lucas {
   background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
   border-color: #bfdbfe;
+  --accent: #3b82f6;
 }
 #lucas h2 {
   color: #1d4ed8;
@@ -114,6 +123,7 @@ hr {
   border-left: 6px solid #f59e0b;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
+  --accent: #f59e0b;
 }
 #noah h2 {
   color: #b45309;
@@ -133,6 +143,7 @@ hr {
 #sara {
   background: linear-gradient(180deg, #fdf4ff 0%, #ffffff 100%);
   border-color: #f0abfc;
+  --accent: #d946ef;
 }
 #sara h2 {
   color: #a21caf;
@@ -168,6 +179,7 @@ hr {
 #antoine {
   background: linear-gradient(180deg, #ecfeff 0%, #ffffff 100%);
   border-top: 4px solid #14b8a6;
+  --accent: #14b8a6;
 }
 #antoine h2 {
   color: #0f766e;
@@ -196,6 +208,72 @@ footer {
   margin: 0 auto;
   padding: 0 16px 24px;
   color: #475569;
+}
+
+/* // Breadcrumb */
+#breadcrumb {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+  user-select: none;
+}
+#breadcrumb ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 16px 10px 28px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(2, 6, 23, 0.08);
+}
+#breadcrumb ul::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 12px;
+  bottom: 12px;
+  width: 2px;
+  background: linear-gradient(
+    180deg,
+    var(--bc-accent),
+    rgba(148, 163, 184, 0.3)
+  );
+}
+#breadcrumb a {
+  display: block;
+  padding: 8px 0 8px 0;
+  color: #334155;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+}
+#breadcrumb a.is-active {
+  color: var(--bc-accent);
+}
+#breadcrumb .bc-dot {
+  position: absolute;
+  left: 15px; /* centré sur la ligne (2px => centre à 15px) */
+  top: var(--dot-top, 0px);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--bc-accent);
+  border: 2px solid white;
+  box-shadow: 0 2px 8px rgba(2, 6, 23, 0.2);
+  transform: translate(-50%, -50%);
+  transition: top 300ms ease, background 200ms ease;
+  pointer-events: none;
+}
+
+@media (max-width: 980px) {
+  #breadcrumb {
+    display: none;
+  }
 }
 
 /* // Small screens */
