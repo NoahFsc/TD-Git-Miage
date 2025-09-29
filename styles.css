@@ -45,6 +45,16 @@ a:hover { color: #1d4ed8; }
 
 hr { border: none; border-top: 1px solid #e5e7eb; margin: 24px 0 0; }
 
+/* // Lucas */
+#lucas {
+  background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
+  border-color: #bfdbfe;
+}
+#lucas h2 { color: #1d4ed8; letter-spacing: 0.2px; }
+#lucas h3 { color: #3b82f6; }
+#lucas ul { list-style: disc; }
+#lucas li::marker { color: #3b82f6; }
+
 /* // Noah */
 #noah {
   background: linear-gradient(180deg, #fff7ed 0%, #ffffff 100%);
