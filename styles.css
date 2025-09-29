@@ -1,0 +1,73 @@
+/* // Reset & Base */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: #0f172a;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+header {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 16px 0;
+}
+
+header h1 { margin: 0 0 8px; font-size: 28px; }
+nav a { color: #334155; text-decoration: none; font-weight: 600; }
+nav a:hover { color: #0ea5a6; text-decoration: underline; }
+
+section { 
+  margin: 24px 0; 
+  padding: 20px; 
+  border-radius: 14px; 
+  border: 1px solid #e5e7eb; 
+  background: #f8fafc;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+}
+
+section h2 { margin-top: 0; font-size: 24px; }
+section h3 { margin-top: 20px; font-size: 18px; }
+section h4 { margin-top: 16px; font-size: 16px; opacity: .9; }
+
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+
+a { color: #2563eb; }
+a:hover { color: #1d4ed8; }
+
+hr { border: none; border-top: 1px solid #e5e7eb; margin: 24px 0 0; }
+
+/* // Noah */
+#noah {
+  background: linear-gradient(180deg, #fff7ed 0%, #ffffff 100%);
+  border-left: 6px solid #f59e0b;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+#noah h2 { color: #b45309; text-transform: none; }
+#noah h3 { color: #d97706; }
+#noah ul { list-style: circle; }
+#noah li::marker { color: #f59e0b; }
+
+/* // Footer */
+footer { 
+  max-width: 980px; 
+  margin: 0 auto; 
+  padding: 0 16px 24px;
+  color: #475569;
+}
+
+/* // Small screens */
+@media (max-width: 600px) {
+  section { padding: 16px; }
+  header h1 { font-size: 22px; }
+  section h2 { font-size: 20px; }
+}
