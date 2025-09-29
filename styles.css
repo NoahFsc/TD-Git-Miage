@@ -41,6 +41,11 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Navigation mobile uniquement */
+nav.mobile-only {
+  display: none;
+}
+
 section {
   margin: 24px 0;
   padding: 20px;
@@ -203,5 +208,10 @@ footer {
   }
   section h2 {
     font-size: 20px;
+  }
+  
+  /* Afficher la navigation uniquement sur mobile */
+  nav.mobile-only {
+    display: block;
   }
 }
