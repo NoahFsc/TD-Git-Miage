@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mos Pages Personnelles</title>
+    <title>Nos Pages Personnelles</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -18,8 +18,11 @@
       <span class="bc-dot" aria-hidden="true"></span>
     </nav>
     <header>
-      <img src="Logoupjv-bleu.png" alt="Logo UPJV" class="logo-upjv" />
-      <h1>Pages du Groupe 1 MIAGE</h1>
+        <img src="Logoupjv-bleu.png" alt="Logo UPJV" class="logo-upjv" />
+        <div class="header-content" style="display:flex; align-items:center; justify-content:space-between;">
+            <h1>Pages du Groupe 1 MIAGE M1</h1>
+            <button id="theme-toggle" aria-label="Basculer mode sombre/clair">🌙</button>
+        </div>
       <nav class="mobile-only">
         <a href="#lucas">Lucas</a> | <a href="#noah">Noah</a> |
         <a href="#sara">Sara</a> |
@@ -323,5 +326,6 @@
       <p>© 2025 — Groupe 1 MIAGE M1</p>
     </footer>
     <script src="breadcrumb.js" defer></script>
+    <script src="darkTheme.js" defer></script>
   </body>
 </html>
